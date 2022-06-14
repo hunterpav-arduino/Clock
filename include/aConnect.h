@@ -31,7 +31,7 @@ String postUpload(AutoConnectAux& aux, PageArgument& args);
 
 String millisToTime(){
   long durationInMillis = millis();
-  long millis = durationInMillis % 1000;
+  // long millis = durationInMillis % 1000;
   long second = (durationInMillis / 1000) % 60;
   long minute = (durationInMillis / (1000 * 60)) % 60;
   long hour = (durationInMillis / (1000 * 60 * 60)) % 24;

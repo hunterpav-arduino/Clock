@@ -29,7 +29,7 @@ static const char PAGE_CONFIG_SAVE[] PROGMEM = R"(
 }
 )";
 
-const char _PAGE_HOME[] PROGMEM = R"rawliteral(
+const char _PAGE_HOME[] = R"rawliteral(
 <!DOCTYPE html>
 <html>
 <head>

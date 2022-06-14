@@ -35,7 +35,7 @@ void loop() {
 
 
 void wdtTickerCheck(){
-  if (WiFi.status() != WL_CONNECTED || settings.mqtt_server && !mqtt.connected()) {
+  if ((WiFi.status() != WL_CONNECTED) || (settings.mqtt_server && !mqtt.connected()) ) {
     app_state.wdtTicker++;
     app_state.isNew = true;
   }

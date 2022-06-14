@@ -2,7 +2,7 @@
 #include <WiFiUdp.h>
 
 WiFiUDP ntpUDP;
-NTPClient timeClient(ntpUDP, "pool.ntp.org", 2 * 60 *60);
+NTPClient timeClient(ntpUDP, "pool.ntp.org", 3 * 60 *60);
 
 void ntp_setup(){
   Serial.println("NTP setup...");
